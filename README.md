@@ -37,8 +37,11 @@ pip install -r requirements.txt
 ```
 ### 2. Create a .env file in root directory
 Add the below environment variables :
+
 POSTGRES_USER=airflow
+
 POSTGRES_PASSWORD=airflow
+
 POSTGRES_DB=airflow
 
 
@@ -47,6 +50,7 @@ docker-compose up --build
 
 ### ✅ Verify data in PostGres service :
 Once the Airflow DAG runs successfully, you can inspect the data:
+
 docker exec -it csv_to_postgres-postgres-1 psql -U airflow -d airflow
 
 SELECT * FROM bitcoin_data LIMIT 10;
