@@ -23,22 +23,6 @@ This project demonstrates an end-to-end ETL pipeline where CSV files are loaded 
 
 ---
 
-## 📁 Project Structure
-
-csv_to_postgres_airflow/
-├── dags/
-│ └── csv_to_postgres_dag.py
-├── data/
-│ └── your_data.csv
-├── docker-compose.yml
-├── Dockerfile
-├── requirements.txt
-├── .env
-└── README.md
-
-
----
-
 ## ⚙️ How to Run
 
 ### 1. Clone the repo
