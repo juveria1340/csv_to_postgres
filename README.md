@@ -31,11 +31,20 @@ This project demonstrates an end-to-end ETL pipeline where CSV files are loaded 
 git clone https://github.com/yourusername/csv_to_postgres_airflow.git
 cd csv_to_postgres_airflow
 
-
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
+### 2. Create a .env file in root directory
+POSTGRES_USER=airflow
+POSTGRES_PASSWORD=airflow
+POSTGRES_DB=airflow
 
 
+### 3. Run the services :
 docker-compose up --build
+
+### Verify data in PostGres service :
+docker exec -it csv_to_postgres-postgres-1 psql -U airflow -d airflow
+
+SELECT * FROM bitcoin_data LIMIT 10;
