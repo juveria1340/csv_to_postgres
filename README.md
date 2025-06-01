@@ -27,7 +27,7 @@ This project demonstrates an end-to-end ETL pipeline where CSV files are loaded 
 
 ### 1. Clone the repo
 
-```bash
+bash
 git clone https://github.com/yourusername/csv_to_postgres_airflow.git
 cd csv_to_postgres_airflow
 
